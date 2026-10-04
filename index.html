@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abhijit Roy | AI / GenAI Developer &amp; Data Analyst</title>
+<meta name="description" content="Portfolio of Abhijit Roy: LLM applications, RAG, multi-agent systems and data analytics with Python, SQL and Power BI.">
+<meta property="og:title" content="Abhijit Roy | AI / GenAI Developer">
+<meta property="og:description" content="LLM applications, RAG, AI agents and analytics.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#080b16;--sf:#10162a;--ln:#232c4a;--tx:#e9edf8;--mu:#9aa5c4;--a:#8b7cff;--b:#4fd1c5;--hd:'Space Grotesk','Segoe UI',sans-serif;--bd:'Inter','Segoe UI',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--tx);font:16px/1.65 var(--bd);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--b);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+nav{position:fixed;inset:0 0 auto;z-index:10;backdrop-filter:blur(12px);background:#080b16b3;border-bottom:1px solid var(--ln)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:62px}
+nav b{font:700 18px var(--hd)}
+nav ul{display:flex;gap:22px;list-style:none;padding:0}
+nav ul a{color:var(--mu);font-size:14px}nav ul a:hover{color:var(--tx)}
+#hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden}
+#bg{position:absolute;inset:0;width:100%;height:100%}
+#hero .wrap{position:relative;pointer-events:none;width:100%}
+#hero .in{max-width:620px;pointer-events:auto}
+.badge{display:inline-block;border:1px solid var(--ln);background:#10162acc;padding:6px 14px;border-radius:99px;font-size:13px;color:var(--b);margin-bottom:22px}
+h1{font:700 clamp(46px,8vw,88px)/1 var(--hd);letter-spacing:-.03em}
+.role{font:500 clamp(20px,3vw,28px) var(--hd);margin:14px 0;background:linear-gradient(90deg,var(--a),var(--b));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{color:var(--mu);max-width:540px}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{padding:12px 22px;border-radius:10px;font-weight:600;font-size:15px;border:1px solid var(--ln);background:var(--sf);transition:.2s}
+.btn:hover{border-color:var(--a)}
+.btn.p{background:var(--a);border-color:var(--a);color:#0a0820}
+section{padding:96px 0}
+h2{font:700 clamp(30px,4vw,42px)/1.15 var(--hd);letter-spacing:-.02em;margin-bottom:12px}
+.sub{color:var(--mu);max-width:640px;margin-bottom:40px}
+.g2{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:start}
+.stats{display:grid;gap:14px}
+.stat{background:var(--sf);border:1px solid var(--ln);border-radius:14px;padding:18px 22px}
+.stat b{display:block;font:700 30px var(--hd);color:var(--b)}
+.stat span{color:var(--mu);font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;perspective:1100px}
+.tilt{position:relative;background:var(--sf);border:1px solid var(--ln);border-radius:16px;padding:26px;transition:transform .18s ease-out,border-color .2s;transform-style:preserve-3d;overflow:hidden}
+.tilt::after{content:"";position:absolute;inset:0;background:radial-gradient(260px circle at var(--mx,50%) var(--my,0%),#8b7cff26,transparent 60%);pointer-events:none;opacity:0;transition:.2s}
+.tilt:hover{border-color:#8b7cff88}.tilt:hover::after{opacity:1}
+.tilt>*{position:relative}
+.feat{grid-column:span 2;background:linear-gradient(145deg,#171d3a,var(--sf));border-color:#8b7cff66}
+.kind{font-size:13px;color:var(--b);margin-bottom:6px}
+h3{font:700 22px var(--hd);margin-bottom:6px}
+.stack{color:var(--mu);font-size:13.5px;margin-bottom:14px}
+.tilt ul{padding-left:18px;color:#c6cee6;font-size:15px}.tilt li{margin-bottom:8px}
+.bv{margin-top:14px;padding-top:14px;border-top:1px solid var(--ln);font-size:14px;color:var(--mu)}
+.bv b{color:var(--tx)}
+.gh{display:inline-block;margin-top:16px;font-weight:600;color:var(--a)}
+.gh:hover{color:var(--b)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{border:1px solid var(--ln);background:#0b1020;padding:5px 12px;border-radius:8px;font-size:13.5px}
+.sk{grid-template-columns:repeat(2,1fr)}
+.tl{border-left:2px solid var(--ln);padding-left:26px;display:grid;gap:30px}
+.tl div{position:relative}
+.tl div::before{content:"";position:absolute;left:-33px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--a)}
+.tl small{color:var(--b)}
+.tl h3{font-size:19px;margin:2px 0}
+.tl p{color:var(--mu);font-size:15px}
+#contact{text-align:center;border-top:1px solid var(--ln)}
+#contact .btns{justify-content:center}
+footer{text-align:center;color:var(--mu);font-size:13px;padding:28px}
+@media(max-width:860px){nav ul{display:none}.g2,.grid,.sk{grid-template-columns:1fr}.feat{grid-column:auto}}
+@media(prefers-reduced-motion:reduce){.tilt{transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><b>Abhijit Roy</b>
+<ul><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#focus">Focus</a></li><li><a href="#education">Education</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
+
+<header id="hero">
+<canvas id="bg" aria-hidden="true"></canvas>
+<div class="wrap"><div class="in">
+<span class="badge">Open to AI, GenAI and Data Analyst roles</span>
+<h1>Abhijit Roy</h1>
+<p class="role">AI / GenAI Developer and Data Analyst</p>
+<p class="lead">I build practical AI and analytics solutions with Python, SQL, LLMs, RAG, multi-agent workflows and Power BI. I turn unstructured information and business data into useful, traceable applications.</p>
+<div class="btns">
+<a class="btn p" href="#projects">See my projects</a>
+<a class="btn" href="Abhijit_Roy_Resume.pdf">Résumé (PDF)</a>
+<a class="btn" href="https://github.com/AbhijitRoy893" rel="noopener">GitHub</a>
+<a class="btn" href="https://linkedin.com/in/abhijitroy893" rel="noopener">LinkedIn</a>
+</div></div></div>
+</header>
+
+<section id="about"><div class="wrap g2">
+<div><h2>Building practical AI and analytics solutions</h2>
+<p class="sub" style="margin-bottom:16px">B.Tech in Information Technology (2026) from Government College of Engineering and Leather Technology, Kolkata. I work across Python, SQL, data analytics, RAG applications, prompt engineering, tool-calling agents and LLM-based automation.</p>
+<p class="sub">My focus is on systems that are explainable, structured and easy to evaluate: every agent decision and every answer source should be visible.</p></div>
+<div class="stats">
+<div class="stat tilt"><b>5</b><span>projects across agents, RAG, extraction and BI</span></div>
+<div class="stat tilt"><b>7.69</b><span>CGPA, B.Tech Information Technology</span></div>
+<div class="stat tilt"><b>Full-stack AI</b><span>LangGraph agents, FastAPI backend, PostgreSQL, Streamlit</span></div>
+</div></div></section>
+
+<section id="skills"><div class="wrap"><h2>Tools and technologies</h2><p class="sub">What I use to build and ship.</p>
+<div class="grid sk">
+<div class="tilt"><h3>Programming and backend</h3><div class="chips"><span>Python</span><span>SQL</span><span>JavaScript</span><span>React</span><span>Node.js</span><span>FastAPI</span><span>REST APIs</span></div></div>
+<div class="tilt"><h3>Generative AI and LLMs</h3><div class="chips"><span>LangChain</span><span>LangGraph</span><span>RAG</span><span>ChromaDB</span><span>Groq</span><span>Mistral AI</span><span>Gemini</span></div></div>
+<div class="tilt"><h3>Agents and automation</h3><div class="chips"><span>Tool-calling agents</span><span>Tavily</span><span>OpenWeatherMap</span><span>n8n</span><span>Streamlit</span></div></div>
+<div class="tilt"><h3>Data and BI</h3><div class="chips"><span>PostgreSQL</span><span>MySQL</span><span>SQLAlchemy</span><span>Excel</span><span>Power BI</span><span>KPI dashboards</span></div></div>
+</div></div></section>
+
+<section id="projects"><div class="wrap"><h2>Selected work</h2><p class="sub">Agents, RAG, structured extraction and analytics, each built end to end.</p>
+<div class="grid">
+
+<article class="tilt feat"><div class="kind">Multi-agent system, full-stack</div><h3>PlanMyTrip AI</h3>
+<div class="stack">LangGraph, FastAPI, PostgreSQL, Groq, Tavily, Streamlit</div>
+<ul><li>Four LangGraph agents (flights, hotels, itinerary, final plan) share state and turn one plain-English request into a complete trip plan with a budget breakdown.</li>
+<li>FastAPI backend with a streaming endpoint, so the Streamlit UI shows each agent finishing live; PostgreSQL checkpointing saves every trip by thread ID.</li></ul>
+<p class="bv"><b>Business value:</b> An end-to-end AI product with the UI, API, agent workflow and database separated cleanly, the structure production systems use.</p>
+<a class="gh" href="https://github.com/AbhijitRoy893/PlanMyTrip-AI" rel="noopener">View on GitHub</a></article>
+
+<article class="tilt"><div class="kind">AI agent</div><h3>CityPilot</h3>
+<div class="stack">LangChain, Gemini, Tavily, OpenWeatherMap, Streamlit</div>
+<ul><li>Tool-calling agent that chooses between live weather and news search by reasoning over the question, with no hardcoded routing.</li><li>A tool-activity panel shows every call, its arguments and its result.</li></ul>
+<p class="bv"><b>Business value:</b> Agent decisions are traceable, which matters wherever automated tool use needs an audit trail.</p>
+<a class="gh" href="https://github.com/AbhijitRoy893/city_agent" rel="noopener">View on GitHub</a></article>
+
+<article class="tilt"><div class="kind">RAG application</div><h3>Marginalia</h3>
+<div class="stack">LangChain, ChromaDB, Mistral AI, Streamlit</div>
+<ul><li>PDF upload, recursive chunking, sentence-transformer embeddings and a persistent ChromaDB store with MMR retrieval.</li><li>Session-isolated indexing and per-answer source citations.</li></ul>
+<p class="bv"><b>Business value:</b> Turns static documents into a searchable knowledge source.</p>
+<a class="gh" href="https://github.com/AbhijitRoy893/Marginalia-RAG" rel="noopener">View on GitHub</a></article>
+
+<article class="tilt"><div class="kind">LLM data extraction</div><h3>ReelParse</h3>
+<div class="stack">LangChain, Mistral AI, Pydantic, Streamlit</div>
+<ul><li>Extracts structured movie records (title, year, genre, director, cast, rating) from unstructured text.</li><li>Pydantic schema and parser replace fragile string matching with validated output.</li></ul>
+<p class="bv"><b>Business value:</b> Reliable extraction in place of manual data entry.</p>
+<a class="gh" href="https://github.com/AbhijitRoy893/ReelParse" rel="noopener">View on GitHub</a></article>
+
+<article class="tilt"><div class="kind">Analytics and BI</div><h3>Customer Behavior Analytics</h3>
+<div class="stack">Python, SQL, MySQL, Power BI</div>
+<ul><li>Analyzed revenue, product ratings, shipping preferences, subscriptions and age-group patterns with SQL and Python.</li><li>Built Power BI visuals and KPI reporting for business readers.</li></ul>
+<p class="bv"><b>Business value:</b> Moves from raw data to decision-ready dashboards.</p>
+<a class="gh" href="https://github.com/AbhijitRoy893/customer-shopping-behavior-analysis" rel="noopener">View on GitHub</a></article>
+
+</div></div></section>
+
+<section id="focus"><div class="wrap"><h2>Where I want to create value</h2><p class="sub" style="margin-bottom:28px">Two directions I am building toward.</p>
+<div class="grid" style="grid-template-columns:repeat(2,1fr)">
+<div class="tilt"><h3>AI / GenAI development</h3><p style="color:var(--mu)">LLM applications, RAG systems, multi-agent workflows, structured extraction pipelines and API-connected services.</p></div>
+<div class="tilt"><h3>Data analytics</h3><p style="color:var(--mu)">Cleaning data, finding patterns, defining KPIs and communicating insights with Python, SQL, Excel and Power BI.</p></div>
+</div></div></section>
+
+<section id="education"><div class="wrap"><h2>Education and training</h2><p class="sub" style="margin-bottom:28px">In order of time.</p>
+<div class="tl">
+<div><small>Apr to Jul 2026</small><h3>Data Analytics with Generative AI</h3><p>Anudip Foundation, Kolkata</p></div>
+<div><small>2022 to 2026</small><h3>B.Tech, Information Technology</h3><p>Government College of Engineering and Leather Technology, Kolkata. CGPA 7.69 / 10</p></div>
+<div><small>Aug to Oct 2024</small><h3>Ethical Hacking and Penetration Testing Intern</h3><p>C-DAC, Noida</p></div>
+</div></div></section>
+
+<section id="contact"><div class="wrap"><h2>Let's build something useful</h2>
+<p class="sub" style="margin:0 auto 28px">West Bengal, India. Open to AI, GenAI and Data Analyst opportunities.</p>
+<div class="btns"><a class="btn p" href="mailto:royabhijit893@gmail.com">royabhijit893@gmail.com</a>
+<a class="btn" href="https://linkedin.com/in/abhijitroy893" rel="noopener">LinkedIn</a>
+<a class="btn" href="https://github.com/AbhijitRoy893" rel="noopener">GitHub</a>
+<a class="btn" href="Abhijit_Roy_Resume.pdf">Download résumé</a></div></div></section>
+<footer>© 2026 Abhijit Roy</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function(){
+var rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+/* 3D tilt cards */
+if(!rm)document.querySelectorAll('.tilt').forEach(function(el){
+el.addEventListener('pointermove',function(e){var b=el.getBoundingClientRect(),x=(e.clientX-b.left)/b.width-.5,y=(e.clientY-b.top)/b.height-.5;
+el.style.transform='perspective(900px) rotateY('+x*10+'deg) rotateX('+-y*10+'deg) translateZ(8px)';
+el.style.setProperty('--mx',(x+.5)*100+'%');el.style.setProperty('--my',(y+.5)*100+'%')});
+el.addEventListener('pointerleave',function(){el.style.transform=''})});
+/* 3D hero scene */
+var c=document.getElementById('bg');
+if(!window.THREE||rm)return;
+var r=new THREE.WebGLRenderer({canvas:c,alpha:true,antialias:true});r.setPixelRatio(Math.min(devicePixelRatio,2));
+var s=new THREE.Scene(),cam=new THREE.PerspectiveCamera(55,1,.1,100);cam.position.z=7;
+var g=new THREE.Group();s.add(g);
+function wf(geo,col,op){return new THREE.Mesh(geo,new THREE.MeshBasicMaterial({color:col,wireframe:true,transparent:true,opacity:op}))}
+var o=wf(new THREE.IcosahedronGeometry(2.3,1),0x8b7cff,.5),i=wf(new THREE.OctahedronGeometry(1.2,0),0x4fd1c5,.75),t=wf(new THREE.TorusGeometry(3.3,.02,8,90),0x4fd1c5,.4);
+t.rotation.x=1.2;g.add(o,i,t);
+var n=650,p=new Float32Array(n*3);for(var k=0;k<n*3;k++)p[k]=(Math.random()-.5)*24;
+var pg=new THREE.BufferGeometry();pg.setAttribute('position',new THREE.BufferAttribute(p,3));
+var pts=new THREE.Points(pg,new THREE.PointsMaterial({size:.035,color:0x9aa5ff,transparent:true,opacity:.8}));s.add(pts);
+var mx=0,my=0;addEventListener('pointermove',function(e){mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5});
+function rs(){var w=c.clientWidth,h=c.clientHeight;r.setSize(w,h,false);cam.aspect=w/h;cam.updateProjectionMatrix();g.position.set(w>860?3.8:0,w>860?0:2.4,0);g.scale.setScalar(w>860?Math.min(1,w/1280):.8)}
+rs();addEventListener('resize',rs);
+(function a(){o.rotation.x+=.0025;o.rotation.y+=.0035;i.rotation.y-=.007;i.rotation.x+=.004;t.rotation.z+=.003;
+g.rotation.y+=(mx*1-g.rotation.y)*.04;g.rotation.x+=(my*.6-g.rotation.x)*.04;pts.rotation.y+=.0005;
+r.render(s,cam);requestAnimationFrame(a)})();
+})();
+</script>
+</body>
+</html>
