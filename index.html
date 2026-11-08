@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abhijit Roy | AI / GenAI Developer &amp; Data Analyst</title>
+<meta name="description" content="Portfolio of Abhijit Roy: LLM applications, RAG, multi-agent systems and data analytics with Python, SQL and Power BI.">
+<meta name="theme-color" content="#0c121a">
+<meta name="color-scheme" content="dark light">
+
+<!-- Share previews. After deploying, replace og-image.png with your full URL, e.g. https://yourname.github.io/og-image.png -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Abhijit Roy | AI / GenAI Developer">
+<meta property="og:description" content="LLM applications, RAG, AI agents and analytics.">
+<meta property="og:image" content="og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Abhijit Roy | AI / GenAI Developer">
+<meta name="twitter:description" content="LLM applications, RAG, AI agents and analytics.">
+<meta name="twitter:image" content="og-image.png">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A7%A0%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=IBM+Plex+Mono:wght@400&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Abhijit Roy","jobTitle":"AI / GenAI Developer and Data Analyst","email":"mailto:royabhijit893@gmail.com","address":{"@type":"PostalAddress","addressRegion":"West Bengal","addressCountry":"IN"},"alumniOf":"Government College of Engineering and Leather Technology, Kolkata","knowsAbout":["Generative AI","RAG","LangChain","LangGraph","Python","SQL","Power BI"],"sameAs":["https://github.com/AbhijitRoy893","https://linkedin.com/in/abhijitroy893"]}
+</script>
+
+<script>
+/* Runs before paint: pick the saved or system theme */
+(function(){var d=document.documentElement,t='dark';
+try{t=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark')}catch(e){}
+d.setAttribute('data-theme',t)})();
+</script>
+
+<style>
+:root{color-scheme:dark;--bg:#0c121a;--sf:#121a25;--ln:#27333b;--tx:#e8edea;--mu:#9aa9a6;--a:#72d6c9;--hot:#ffb347;--nv:#0c121ab8;--hd:'Bricolage Grotesque','Segoe UI',system-ui,sans-serif;--tt:'Newsreader',Georgia,'Times New Roman',serif;--mono:'IBM Plex Mono',ui-monospace,Menlo,monospace}
+:root[data-theme=light]{color-scheme:light;--bg:#eef1ee;--sf:#f8faf8;--ln:#c8d0cb;--tx:#121820;--mu:#4d5957;--a:#0e6560;--hot:#b8610a;--nv:#eef1eeb8}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--tx);font:18px/1.7 var(--tt);-webkit-font-smoothing:antialiased;transition:background .25s,color .25s}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--a);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:12px;top:-60px;z-index:20;background:var(--tx);color:var(--bg);padding:10px 16px;border-radius:8px;font:600 15px var(--hd)}
+.skip:focus{top:10px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+
+/* nav */
+nav{position:fixed;inset:0 0 auto;z-index:10;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);background:var(--nv);border-bottom:1px solid var(--ln)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:62px;gap:16px}
+.brand{font:700 19px var(--hd);letter-spacing:-.02em}
+nav ul{display:flex;gap:26px;list-style:none;padding:0}
+nav ul a{font:500 14.5px var(--hd);color:var(--mu);padding:6px 0;border-bottom:2px solid transparent;transition:color .2s,border-color .2s}
+nav ul a:hover{color:var(--tx)}
+nav ul a[aria-current=true]{color:var(--tx);border-bottom-color:var(--hot)}
+.nr{display:flex;gap:8px}
+.ib{width:38px;height:38px;display:inline-grid;place-items:center;border-radius:8px;border:1px solid var(--ln);background:transparent;color:var(--tx);cursor:pointer;transition:border-color .2s,color .2s}
+.ib:hover{border-color:var(--hot);color:var(--hot)}
+.burger{display:none}
+#prog{position:absolute;left:0;bottom:-1px;height:2px;width:100%;background:var(--hot);transform-origin:0 50%;transform:scaleX(0)}
+
+/* hero */
+#hero{position:relative;z-index:1;min-height:100vh;display:flex;align-items:center}
+#bg{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+main,footer{position:relative;z-index:1}
+#hero .wrap{position:relative;pointer-events:none;width:100%}
+#hero .in{max-width:640px;pointer-events:auto}
+.badge{display:inline-flex;align-items:center;gap:10px;font:500 14.5px var(--hd);color:var(--mu);margin-bottom:26px}
+.badge::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--hot)}
+h1{font:700 clamp(58px,9.5vw,124px)/.9 var(--hd);letter-spacing:-.045em}
+.role{font:500 clamp(20px,2.6vw,28px)/1.2 var(--hd);letter-spacing:-.015em;margin:20px 0 14px}
+.lead{color:var(--mu);font-size:19px;max-width:520px}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px;align-items:center}
+.btn{font:600 15px var(--hd);padding:12px 20px;border-radius:8px;border:1px solid var(--tx);background:transparent;color:var(--tx);cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.btn:hover{border-color:var(--hot);color:var(--hot)}
+.btn.p{background:var(--tx);color:var(--bg)}
+.btn.p:hover{background:var(--hot);border-color:var(--hot);color:#14100a}
+.soc{display:flex;gap:8px;margin-left:4px}
+
+/* sections: heading column on the left, content on the right */
+.sec{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:56px;padding:96px 24px;border-top:1px solid var(--ln);scroll-margin-top:62px}
+.sec>div:first-child{position:sticky;top:98px;align-self:start}
+h2{font:650 clamp(26px,2.8vw,34px)/1.12 var(--hd);letter-spacing:-.025em}
+.note{color:var(--mu);font-size:16px;margin-top:12px;max-width:30ch}
+.big{font-size:22px;line-height:1.55}
+.big+p{margin-top:1em;color:var(--mu)}
+
+/* rows: label on the left, value on the right */
+.rows{display:grid;grid-template-columns:minmax(120px,190px) 1fr;border-top:1px solid var(--ln)}
+.rows dt,.rows dd{padding:16px 0;border-bottom:1px solid var(--ln)}
+.rows dt{font:600 16px var(--hd);letter-spacing:-.01em;padding-right:20px}
+.rows dd{color:color-mix(in srgb,var(--tx) 82%,var(--mu))}
+.rows dd strong{display:block;font:600 18px var(--hd);letter-spacing:-.01em;color:var(--tx)}
+.rows dd small{display:block;font-size:16px;color:var(--mu)}
+.rows.mt{margin-top:40px}
+.rows.dates dt{font-weight:500;color:var(--mu)}
+
+/* projects */
+.filters{display:flex;flex-wrap:wrap;gap:22px;margin-bottom:26px}
+.fb{font:500 15px var(--hd);color:var(--mu);background:none;border:0;border-bottom:2px solid transparent;padding:4px 0;cursor:pointer;transition:color .2s}
+.fb:hover{color:var(--tx)}
+.fb[aria-pressed=true]{color:var(--tx);border-bottom-color:var(--hot)}
+[hidden]{display:none!important}
+.proj{padding:34px 0}
+.proj:not(.feat){border-top:1px solid var(--ln)}
+.feat{background:var(--sf);border:1px solid var(--ln);border-radius:12px;padding:32px;margin-bottom:6px}
+.ph{display:flex;justify-content:space-between;align-items:baseline;gap:6px 18px;flex-wrap:wrap}
+h3{font:650 26px/1.15 var(--hd);letter-spacing:-.02em}
+.feat h3{font-size:34px}
+.kind{font-style:italic;font-size:16px;color:var(--mu)}
+.stack{font:400 14.5px var(--hd);color:var(--mu);margin:6px 0 18px}
+.proj ul{list-style:none;padding:0}
+.proj li{position:relative;padding-left:20px;margin-bottom:10px;font-size:17px}
+.proj li::before{content:"";position:absolute;left:0;top:.85em;width:9px;height:2px;background:var(--hot)}
+.bv{margin-top:18px;font-size:16.5px;color:var(--mu)}
+.bv b{font:600 15px var(--hd);color:var(--tx);margin-right:6px}
+.links{display:flex;flex-wrap:wrap;gap:18px;margin-top:18px}
+.gh{font:600 15px var(--hd);color:var(--a);border-bottom:1px solid currentColor;padding-bottom:1px;transition:color .2s}
+.gh:hover{color:var(--hot)}
+
+/* agent pipeline: the dots light up in order once it scrolls into view */
+.flow{list-style:none;padding:0;display:flex;align-items:center;flex-wrap:wrap;row-gap:10px;margin:0 0 22px}
+.flow li{display:flex;align-items:center;font:500 14px var(--hd)}
+.flow li::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--ln);margin-right:8px}
+.flow .sep{width:26px;height:1px;background:var(--ln);margin:0 10px}
+.flow .sep::before{display:none}
+.flow.go li:not(.sep)::before{animation:lit .01s forwards;animation-delay:calc(var(--i)*.45s)}
+@keyframes lit{to{background:var(--hot)}}
+
+/* contact */
+.mail{display:inline-block;font:650 clamp(24px,4vw,46px)/1.1 var(--hd);letter-spacing:-.03em;border-bottom:3px solid var(--hot);padding-bottom:4px;word-break:break-all;transition:color .2s}
+.mail:hover{color:var(--hot)}
+#contact .btns{margin-top:34px}
+
+footer{color:var(--mu);font:400 14px var(--hd);padding:28px 24px;border-top:1px solid var(--ln);max-width:1120px;margin:0 auto}
+
+/* theme toggle, back to top, toast */
+#themeBtn .moon{display:none}
+[data-theme=light] #themeBtn .sun{display:none}
+[data-theme=light] #themeBtn .moon{display:block}
+#top{position:fixed;right:20px;bottom:20px;z-index:9;background:var(--bg);opacity:0;pointer-events:none;transition:opacity .25s,transform .25s,border-color .2s,color .2s;transform:translateY(8px)}
+#top.show{opacity:1;pointer-events:auto;transform:none}
+#toast{position:fixed;left:50%;bottom:26px;z-index:30;translate:-50% 20px;background:var(--tx);color:var(--bg);padding:10px 18px;border-radius:8px;font:600 14px var(--hd);opacity:0;pointer-events:none;transition:.25s}
+#toast.show{opacity:1;translate:-50% 0}
+
+@media(max-width:860px){
+.sec{grid-template-columns:1fr;gap:26px;padding:64px 24px}
+.sec>div:first-child{position:static}
+.note{max-width:none}
+.burger{display:inline-grid}
+nav ul{display:none;position:absolute;top:62px;left:0;right:0;flex-direction:column;gap:0;background:var(--bg);border-bottom:1px solid var(--ln);padding:8px 24px 16px}
+nav.open ul{display:flex}
+nav ul a{display:block;padding:12px 0;font-size:16px;border-bottom:1px solid var(--ln)}
+nav ul a[aria-current=true]{border-bottom-color:var(--ln);color:var(--a)}
+.rows{grid-template-columns:1fr}
+.rows dt{border-bottom:0;padding:14px 0 2px}
+.rows dd{padding:0 0 14px}
+.feat{padding:22px}
+.feat h3{font-size:28px}
+#hero{padding-top:62px}#hero .in{margin-top:40vh}
+}
+@media(prefers-reduced-motion:reduce){
+html{scroll-behavior:auto}body{transition:none}
+.flow li:not(.sep)::before{background:var(--hot)}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<nav id="nav"><div class="wrap">
+<a class="brand" href="#hero">Abhijit Roy</a>
+<ul id="menu">
+<li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#approach">Approach</a></li><li><a href="#education">Education</a></li><li><a href="#contact">Contact</a></li>
+</ul>
+<div class="nr">
+<button class="ib" id="themeBtn" type="button" aria-label="Switch color theme"><svg class="sun" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="moon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"/></svg></button>
+<button class="ib burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button>
+</div>
+<div id="prog" aria-hidden="true"></div></div></nav>
+
+<canvas id="bg" aria-hidden="true"></canvas>
+<header id="hero">
+<div class="wrap"><div class="in">
+<span class="badge">Open to AI, GenAI and Data Analyst roles</span>
+<h1>Abhijit Roy</h1>
+<p class="role">AI / GenAI Developer and Data Analyst</p>
+<p class="lead">I build practical AI and analytics solutions with Python, SQL, LLMs, RAG, multi-agent workflows and Power BI. I turn unstructured information and business data into useful, traceable applications.</p>
+<div class="btns">
+<a class="btn p" href="#projects">See my projects</a>
+<a class="btn" href="Abhijit_Roy_Resume.pdf">Résumé (PDF)</a>
+<span class="soc">
+<a class="ib" href="https://github.com/AbhijitRoy893" rel="noopener" aria-label="GitHub profile"><svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
+<a class="ib" href="https://linkedin.com/in/abhijitroy893" rel="noopener" aria-label="LinkedIn profile"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a>
+</span>
+</div>
+</div></div>
+</header>
+
+<main id="main">
+
+<section id="about" class="sec wrap">
+<div><h2>Building practical AI and analytics solutions</h2></div>
+<div>
+<p class="big">B.Tech in Information Technology (2026) from Government College of Engineering and Leather Technology, Kolkata. I work across Python, SQL, data analytics, RAG applications, prompt engineering, tool-calling agents and LLM-based automation.</p>
+<p>My focus is on systems that are explainable, structured and easy to evaluate: every agent decision and every answer source should be visible.</p>
+<dl class="rows mt">
+<dt>Projects</dt><dd>5 across agents, RAG, extraction and BI</dd>
+<dt>Degree</dt><dd>B.Tech Information Technology, CGPA 7.69 / 10</dd>
+<dt>Full-stack AI</dt><dd>LangGraph agents, FastAPI backend, PostgreSQL, Streamlit</dd>
+</dl>
+</div></section>
+
+<section id="skills" class="sec wrap">
+<div><h2>Tools and technologies</h2><p class="note">What I use to build and ship.</p></div>
+<dl class="rows">
+<dt>Programming and backend</dt><dd>Python, SQL, JavaScript, React, Node.js, FastAPI, REST APIs</dd>
+<dt>Generative AI and LLMs</dt><dd>LangChain, LangGraph, RAG, ChromaDB, Groq, Mistral AI, Gemini</dd>
+<dt>Agents and automation</dt><dd>Tool-calling agents, Tavily, OpenWeatherMap, n8n, Streamlit</dd>
+<dt>Data and BI</dt><dd>PostgreSQL, MySQL, SQLAlchemy, Excel, Power BI, KPI dashboards</dd>
+</dl></section>
+
+<section id="projects" class="sec wrap">
+<div><h2>Selected work</h2><p class="note">Agents, RAG, structured extraction and analytics, each built end to end.</p></div>
+<div>
+<div class="filters" role="group" aria-label="Filter projects">
+<button class="fb" type="button" data-f="all" aria-pressed="true">All</button>
+<button class="fb" type="button" data-f="agents" aria-pressed="false">Agents</button>
+<button class="fb" type="button" data-f="rag" aria-pressed="false">RAG and extraction</button>
+<button class="fb" type="button" data-f="data" aria-pressed="false">Data and BI</button>
+</div>
+<div id="pgrid">
+
+<!-- To add a live demo or screenshot to any project, put this inside its .links div:
+     <a class="gh" href="YOUR-DEMO-URL" rel="noopener">Live demo</a>
+     and an <img src="shots/name.png" alt="..." loading="lazy" style="width:100%;border-radius:10px;margin-top:18px"> after the list. -->
+
+<article class="proj feat" data-cat="agents"><div class="ph"><h3>PlanMyTrip AI</h3><span class="kind">Multi-agent system, full-stack</span></div>
+<div class="stack">LangGraph, FastAPI, PostgreSQL, Groq, Tavily, Streamlit</div>
+<ol class="flow" aria-label="Agent pipeline">
+<li style="--i:0">Request</li><li class="sep" aria-hidden="true"></li><li style="--i:1">Flights</li><li class="sep" aria-hidden="true"></li><li style="--i:2">Hotels</li><li class="sep" aria-hidden="true"></li><li style="--i:3">Itinerary</li><li class="sep" aria-hidden="true"></li><li style="--i:4">Final plan and budget</li>
+</ol>
+<ul><li>Four LangGraph agents (flights, hotels, itinerary, final plan) share state and turn one plain-English request into a complete trip plan with a budget breakdown.</li>
+<li>FastAPI backend with a streaming endpoint, so the Streamlit UI shows each agent finishing live; PostgreSQL checkpointing saves every trip by thread ID.</li></ul>
+<p class="bv"><b>Business value</b> An end-to-end AI product with the UI, API, agent workflow and database separated cleanly, the structure production systems use.</p>
+<div class="links"><a class="gh" href="https://github.com/AbhijitRoy893/PlanMyTrip-AI" rel="noopener">View on GitHub</a></div></article>
+
+<article class="proj" data-cat="agents"><div class="ph"><h3>CityPilot</h3><span class="kind">AI agent</span></div>
+<div class="stack">LangChain, Gemini, Tavily, OpenWeatherMap, Streamlit</div>
+<ul><li>Tool-calling agent that chooses between live weather and news search by reasoning over the question, with no hardcoded routing.</li><li>A tool-activity panel shows every call, its arguments and its result.</li></ul>
+<p class="bv"><b>Business value</b> Agent decisions are traceable, which matters wherever automated tool use needs an audit trail.</p>
+<div class="links"><a class="gh" href="https://github.com/AbhijitRoy893/city_agent" rel="noopener">View on GitHub</a></div></article>
+
+<article class="proj" data-cat="rag"><div class="ph"><h3>Marginalia</h3><span class="kind">RAG application</span></div>
+<div class="stack">LangChain, ChromaDB, Mistral AI, Streamlit</div>
+<ul><li>PDF upload, recursive chunking, sentence-transformer embeddings and a persistent ChromaDB store with MMR retrieval.</li><li>Session-isolated indexing and per-answer source citations.</li></ul>
+<p class="bv"><b>Business value</b> Turns static documents into a searchable knowledge source.</p>
+<div class="links"><a class="gh" href="https://github.com/AbhijitRoy893/Marginalia-RAG" rel="noopener">View on GitHub</a></div></article>
+
+<article class="proj" data-cat="rag"><div class="ph"><h3>ReelParse</h3><span class="kind">LLM data extraction</span></div>
+<div class="stack">LangChain, Mistral AI, Pydantic, Streamlit</div>
+<ul><li>Extracts structured movie records (title, year, genre, director, cast, rating) from unstructured text.</li><li>Pydantic schema and parser replace fragile string matching with validated output.</li></ul>
+<p class="bv"><b>Business value</b> Reliable extraction in place of manual data entry.</p>
+<div class="links"><a class="gh" href="https://github.com/AbhijitRoy893/ReelParse" rel="noopener">View on GitHub</a></div></article>
+
+<article class="proj" data-cat="data"><div class="ph"><h3>Customer Behavior Analytics</h3><span class="kind">Analytics and BI</span></div>
+<div class="stack">Python, SQL, MySQL, Power BI</div>
+<ul><li>Analyzed revenue, product ratings, shipping preferences, subscriptions and age-group patterns with SQL and Python.</li><li>Built Power BI visuals and KPI reporting for business readers.</li></ul>
+<p class="bv"><b>Business value</b> Moves from raw data to decision-ready dashboards.</p>
+<div class="links"><a class="gh" href="https://github.com/AbhijitRoy893/customer-shopping-behavior-analysis" rel="noopener">View on GitHub</a></div></article>
+
+</div></div></section>
+
+<section id="approach" class="sec wrap">
+<div><h2>How I work</h2><p class="note">The same habits show up in every project, whether the goal is AI development or data analytics.</p></div>
+<dl class="rows">
+<dt>Traceable</dt><dd>Agent tool calls, retrieval sources and answer citations are visible to the user, so results can be checked rather than trusted blindly.</dd>
+<dt>Structured and validated</dt><dd>Typed schemas and parsers replace string matching, and KPIs are defined before dashboards are built, so outputs are consistent and easy to evaluate.</dd>
+<dt>Cleanly separated</dt><dd>UI, API, agent workflow and database stay in their own layers, which makes each part easier to test, swap and scale.</dd>
+</dl></section>
+
+<section id="education" class="sec wrap">
+<div><h2>Education and training</h2><p class="note">In order of time.</p></div>
+<dl class="rows dates">
+<dt>Apr to Jul 2026</dt><dd><strong>Data Analytics with Generative AI</strong><small>Anudip Foundation, Kolkata</small></dd>
+<dt>2022 to 2026</dt><dd><strong>B.Tech, Information Technology</strong><small>Government College of Engineering and Leather Technology, Kolkata. CGPA 7.69 / 10</small></dd>
+<dt>Aug to Oct 2024</dt><dd><strong>Ethical Hacking and Penetration Testing Intern</strong><small>C-DAC, Noida</small></dd>
+</dl></section>
+
+<section id="contact" class="sec wrap">
+<div><h2>Let's build something useful</h2><p class="note">West Bengal, India. Open to AI, GenAI and Data Analyst opportunities.</p></div>
+<div>
+<a class="mail" id="mailLink" href="mailto:royabhijit893@gmail.com">royabhijit893@gmail.com</a>
+<div class="btns">
+<button class="btn" id="copyMail" type="button">Copy email</button>
+<a class="btn" href="https://linkedin.com/in/abhijitroy893" rel="noopener">LinkedIn</a>
+<a class="btn" href="https://github.com/AbhijitRoy893" rel="noopener">GitHub</a>
+<a class="btn" href="Abhijit_Roy_Resume.pdf">Download résumé</a></div>
+</div></section>
+
+</main>
+<footer>© 2026 Abhijit Roy</footer>
+<button class="ib" id="top" type="button" aria-label="Back to top"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function(){
+var rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+var root=document.documentElement;
+function $(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))}
+
+/* mobile menu */
+var nav=document.getElementById('nav'),bg=document.getElementById('burger');
+function menu(open){nav.classList.toggle('open',open);bg.setAttribute('aria-expanded',open);bg.setAttribute('aria-label',open?'Close menu':'Open menu')}
+bg.addEventListener('click',function(){menu(!nav.classList.contains('open'))});
+$('#menu a').forEach(function(a){a.addEventListener('click',function(){menu(false)})});
+addEventListener('keydown',function(e){if(e.key==='Escape')menu(false)});
+addEventListener('resize',function(){if(innerWidth>860)menu(false)});
+
+/* active nav link */
+if('IntersectionObserver' in window){
+var links=$('#menu a'),map={};links.forEach(function(a){map[a.getAttribute('href').slice(1)]=a});
+var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.removeAttribute('aria-current')});var a=map[e.target.id];if(a)a.setAttribute('aria-current','true')}})},{rootMargin:'-45% 0px -50% 0px'});
+$('main section').forEach(function(s){so.observe(s)})}
+
+/* theme toggle */
+var tb=document.getElementById('themeBtn');
+function setTheme(t){root.setAttribute('data-theme',t);try{localStorage.setItem('theme',t)}catch(e){}
+var m=document.querySelector('meta[name=theme-color]');if(m)m.content=t==='light'?'#eef1ee':'#0c121a';
+dispatchEvent(new Event('themechange'))}
+tb.addEventListener('click',function(){setTheme(root.getAttribute('data-theme')==='light'?'dark':'light')});
+(function(){var m=document.querySelector('meta[name=theme-color]');if(m&&root.getAttribute('data-theme')==='light')m.content='#eef1ee'})();
+
+/* project filters */
+var fbs=$('.fb'),cards=$('#pgrid article');
+fbs.forEach(function(b){b.addEventListener('click',function(){
+fbs.forEach(function(x){x.setAttribute('aria-pressed',x===b)});
+cards.forEach(function(c){c.hidden=b.dataset.f!=='all'&&c.dataset.cat!==b.dataset.f})})});
+
+/* toast + copy email */
+var toast=document.getElementById('toast'),tt;
+function say(t){toast.textContent=t;toast.classList.add('show');clearTimeout(tt);tt=setTimeout(function(){toast.classList.remove('show')},1800)}
+document.getElementById('copyMail').addEventListener('click',function(){var a='royabhijit893@gmail.com';
+if(navigator.clipboard)navigator.clipboard.writeText(a).then(function(){say('Email copied')},function(){say(a)});else say(a)});
+
+/* email: Gmail compose on desktop, default mail app on touch devices */
+var ml=document.getElementById('mailLink');
+if(ml)ml.addEventListener('click',function(e){if(matchMedia('(pointer: coarse)').matches)return;e.preventDefault();
+open('https://mail.google.com/mail/?view=cm&fs=1&to=royabhijit893@gmail.com','_blank','noopener')});
+
+/* back to top */
+var topb=document.getElementById('top');
+topb.addEventListener('click',function(){scrollTo({top:0,behavior:rm?'auto':'smooth'})});
+addEventListener('scroll',function(){topb.classList.toggle('show',scrollY>innerHeight*.8)},{passive:true});
+
+/* pipeline lights up once when it scrolls into view */
+var fl=document.querySelector('.flow');
+if(fl){if(!('IntersectionObserver' in window)||rm)fl.classList.add('go');
+else{var fo=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('go');fo.unobserve(e.target)}})},{threshold:.9});fo.observe(fl)}}
+
+/* rough continent outlines [lon,lat]; only used to place dots, so approximate is fine */
+var POLY=[
+[[-168,66],[-140,70],[-125,70],[-95,72],[-80,73],[-62,60],[-55,50],[-67,45],[-76,35],[-81,25],[-97,26],[-97,19],[-87,21],[-83,10],[-79,8],[-92,15],[-105,20],[-117,32],[-124,40],[-125,49],[-135,58],[-150,60],[-165,60]],
+[[-78,10],[-62,11],[-50,0],[-35,-6],[-40,-22],[-48,-28],[-58,-38],[-65,-42],[-68,-55],[-74,-50],[-73,-37],[-71,-18],[-81,-5],[-79,2]],
+[[-10,36],[-9,43],[-2,48],[-5,52],[5,58],[10,64],[20,70],[30,70],[40,68],[40,55],[30,46],[28,41],[22,36],[12,38],[3,43]],
+[[-17,21],[-10,30],[-5,36],[10,37],[20,32],[32,31],[34,28],[43,12],[51,12],[40,-2],[40,-15],[33,-26],[20,-35],[15,-28],[12,-12],[9,4],[-8,4],[-17,14]],
+[[40,68],[60,70],[80,73],[110,76],[140,72],[170,68],[180,65],[160,55],[140,45],[130,35],[122,30],[122,22],[108,18],[105,10],[100,2],[98,10],[93,20],[88,22],[80,13],[77,8],[73,18],[68,24],[57,25],[51,29],[45,13],[35,28],[36,36],[28,41],[40,55]],
+[[95,5],[106,-6],[115,-8],[120,-9],[110,-2],[100,2]],
+[[130,31],[141,36],[145,44],[141,45],[132,34]],
+[[114,-22],[122,-18],[131,-12],[137,-12],[142,-11],[146,-19],[153,-26],[152.5,-33],[150,-38],[141,-38],[130,-32],[115,-34]],
+[[-55,60],[-45,60],[-20,70],[-20,82],[-60,82],[-70,76]],
+[[-5,50],[2,51],[0,58],[-6,58]]
+];
+function inside(lon,lat,p){var c=false;for(var i=0,j=p.length-1;i<p.length;j=i++){var xi=p[i][0],yi=p[i][1],xj=p[j][0],yj=p[j][1];if(((yi>lat)!==(yj>lat))&&(lon<(xj-xi)*(lat-yi)/(yj-yi)+xi))c=!c}return c}
+function land(lat,lon){for(var k=0;k<POLY.length;k++)if(inside(lon,lat,POLY[k]))return true;return false}
+
+/* scroll progress bar */
+var prog=document.getElementById('prog');
+function scrollP(){var h=root.scrollHeight-innerHeight;return h>0?Math.min(1,Math.max(0,scrollY/h)):0}
+function upProg(){if(prog)prog.style.transform='scaleX('+scrollP()+')'}
+addEventListener('scroll',upProg,{passive:true});upProg();
+
+/* 3D world: a dotted globe with data arcs flying out from Kolkata */
+var c=document.getElementById('bg');
+if(!window.THREE||rm)return;
+var r;try{r=new THREE.WebGLRenderer({canvas:c,alpha:true,antialias:true})}catch(err){return}
+var pr=Math.min(devicePixelRatio,2);r.setPixelRatio(pr);
+var small=innerWidth<=860;
+var s=new THREE.Scene(),cam=new THREE.PerspectiveCamera(55,1,.1,100);cam.position.z=8;
+var world=new THREE.Group();s.add(world);
+var globe=new THREE.Group();world.add(globe);
+var RAD=2.4,D2R=Math.PI/180;
+function ll(lat,lon,rad){var a=lat*D2R,b=lon*D2R;return new THREE.Vector3(rad*Math.cos(a)*Math.sin(b),rad*Math.sin(a),rad*Math.cos(a)*Math.cos(b))}
+
+/* soft round dot sprite */
+var cv=document.createElement('canvas');cv.width=cv.height=64;
+var cx=cv.getContext('2d'),gr=cx.createRadialGradient(32,32,0,32,32,32);
+gr.addColorStop(0,'rgba(255,255,255,1)');gr.addColorStop(.55,'rgba(255,255,255,.9)');gr.addColorStop(1,'rgba(255,255,255,0)');
+cx.fillStyle=gr;cx.fillRect(0,0,64,64);
+var dotTex=new THREE.CanvasTexture(cv);
+function pm(size,op){return new THREE.PointsMaterial({size:size,map:dotTex,transparent:true,opacity:op,depthWrite:false})}
+
+/* ocean body hides the far side of the globe */
+var body=new THREE.Mesh(new THREE.SphereGeometry(RAD*.998,64,48),new THREE.MeshBasicMaterial());globe.add(body);
+
+/* land dots */
+var NT=small?6500:11000,lp=[];
+for(var i=0;i<NT;i++){
+var y=1-2*(i+.5)/NT,lat=Math.asin(y)/D2R,lon=((i*137.508)%360)-180;
+if(land(lat,lon)){var v=ll(lat,lon,RAD*1.002);lp.push(v.x,v.y,v.z)}}
+var lg=new THREE.BufferGeometry();lg.setAttribute('position',new THREE.Float32BufferAttribute(lp,3));
+var dots=new THREE.Points(lg,pm(small?.075:.06,.95));globe.add(dots);
+
+/* faint latitude / longitude grid */
+var gp=[];function seg(p,q){gp.push(p.x,p.y,p.z,q.x,q.y,q.z)}
+[-60,-30,0,30,60].forEach(function(la){for(var k=0;k<72;k++)seg(ll(la,k*5,RAD*1.001),ll(la,(k+1)*5,RAD*1.001))});
+for(var lo=0;lo<360;lo+=30)for(var ph=-90;ph<90;ph+=5)seg(ll(ph,lo,RAD*1.001),ll(ph+5,lo,RAD*1.001));
+var gg=new THREE.BufferGeometry();gg.setAttribute('position',new THREE.Float32BufferAttribute(gp,3));
+var grid=new THREE.LineSegments(gg,new THREE.LineBasicMaterial({transparent:true,opacity:.12,depthWrite:false}));globe.add(grid);
+
+/* atmosphere glow */
+var glow=new THREE.Mesh(new THREE.SphereGeometry(RAD*1.18,48,32),new THREE.ShaderMaterial({
+uniforms:{uColor:{value:new THREE.Color(0x6f63ff)}},
+vertexShader:'varying vec3 vN;void main(){vN=normalize(normalMatrix*normal);gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.0);}',
+fragmentShader:'uniform vec3 uColor;varying vec3 vN;void main(){float i=clamp(pow(0.62-dot(vN,vec3(0.0,0.0,1.0)),4.0)*0.35,0.0,1.0);gl_FragColor=vec4(uColor,i);}',
+side:THREE.BackSide,transparent:true,depthWrite:false}));world.add(glow);
+
+/* cities and arcs from the Kolkata hub */
+var hubV=ll(22.57,88.36,RAD*1.004);
+var CITIES=[[51.5,-.1],[40.7,-74],[37.8,-122.4],[1.35,103.8],[35.7,139.7],[-33.9,151.2],[25.2,55.3],[-23.5,-46.6],[-1.3,36.8],[52.5,13.4],[19.1,72.9]];
+function arcPts(a,b){var A=a.clone().normalize(),B=b.clone().normalize(),ang=A.angleTo(B),sn=Math.sin(ang),h=.05+ang*.1,out=[];
+for(var k=0;k<=64;k++){var t=k/64,w1=Math.sin((1-t)*ang)/sn,w2=Math.sin(t*ang)/sn;
+out.push(A.clone().multiplyScalar(w1).add(B.clone().multiplyScalar(w2)).multiplyScalar(RAD*(1.004+Math.sin(Math.PI*t)*h)))}
+return out}
+var arcs=[],cp=[hubV.x,hubV.y,hubV.z];
+CITIES.forEach(function(ct,k){
+var dv=ll(ct[0],ct[1],RAD*1.004),pts=arcPts(hubV,dv);
+var ag=new THREE.BufferGeometry().setFromPoints(pts);ag.setDrawRange(0,0);
+var ln=new THREE.Line(ag,new THREE.LineBasicMaterial({transparent:true,opacity:.9,depthWrite:false}));globe.add(ln);
+arcs.push({ln:ln,pts:pts,t:-k*.32,sp:.0075+(k%3)*.001});
+cp.push(dv.x,dv.y,dv.z)});
+var cg=new THREE.BufferGeometry();cg.setAttribute('position',new THREE.Float32BufferAttribute(cp,3));
+var cities=new THREE.Points(cg,pm(.11,1));globe.add(cities);
+var hubG=new THREE.BufferGeometry();hubG.setAttribute('position',new THREE.Float32BufferAttribute([hubV.x,hubV.y,hubV.z],3));
+var hub=new THREE.Points(hubG,pm(.2,1));globe.add(hub);
+var hp=new Float32Array(arcs.length*3),hg=new THREE.BufferGeometry();hg.setAttribute('position',new THREE.BufferAttribute(hp,3));
+var heads=new THREE.Points(hg,pm(.16,1));globe.add(heads);
+
+/* pulse rings on the hub */
+var rings=[0,.5].map(function(off){
+var m=new THREE.Mesh(new THREE.RingGeometry(.07,.09,48),new THREE.MeshBasicMaterial({transparent:true,side:THREE.DoubleSide,depthWrite:false}));
+m.position.copy(hubV);m.lookAt(hubV.clone().multiplyScalar(2));globe.add(m);return{m:m,off:off}});
+
+/* theme colours */
+var base={};
+function recolor(){var L=root.getAttribute('data-theme')==='light';
+body.material.color.set(L?0xe2e7e3:0x101a26);
+dots.material.color.set(L?0x2a6b66:0x7fcfc4);
+grid.material.color.set(L?0x2a6b66:0x7fcfc4);grid.material.opacity=L?.14:.1;
+glow.material.uniforms.uColor.value.set(L?0x7fb8b0:0x2f7f78);
+arcs.forEach(function(a){a.ln.material.color.set(L?0xb8610a:0xffb347)});
+cities.material.color.set(L?0x121820:0xffffff);
+heads.material.color.set(L?0x121820:0xffffff);
+hub.material.color.set(L?0xb8610a:0xffb347);
+rings.forEach(function(q){q.m.material.color.set(L?0xb8610a:0xffb347)})}
+recolor();addEventListener('themechange',recolor);
+
+/* layout: globe gets its own space (right on desktop, above the text on phones) */
+var lay={x:3.7,y:0,s:1},mx=0,my=0;
+function rs(){small=innerWidth<=860;r.setPixelRatio(pr);r.setSize(innerWidth,innerHeight,false);
+var asp=innerWidth/innerHeight;cam.aspect=asp;cam.updateProjectionMatrix();
+var hh=Math.tan(27.5*D2R)*8,hw=hh*asp,rad;
+if(small){rad=Math.min(hh*.3,hw*.42);lay.x=0;lay.y=hh*.36}
+else{rad=Math.min(RAD,hw*.36,hh*.8);lay.x=hw*.5;lay.y=-.1}
+lay.s=rad/RAD}
+addEventListener('pointermove',function(e){mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5});
+rs();addEventListener('resize',rs);
+world.position.set(lay.x,lay.y,0);world.scale.setScalar(lay.s);
+
+/* per frame */
+var ps=0,spin=0,mxs=0,mys=0,raf=0,last=performance.now(),acc=0,fr=0;
+function frame(now){
+if(document.hidden){raf=0;return}
+var hf=Math.max(0,Math.min(1,1-scrollY/(innerHeight*.75)));
+if(hf<=.01){c.style.opacity=0;raf=0;return}
+c.style.opacity=hf;
+var dt=now-last;last=now;acc+=dt;fr++;
+if(fr>=90){if(acc/fr>34&&pr>1){pr=1;rs()}acc=0;fr=0}
+ps+=(scrollY/innerHeight-ps)*.12;
+world.position.x+=(lay.x-world.position.x)*.08;
+world.position.y+=(lay.y+ps*1.4-world.position.y)*.08;
+world.scale.setScalar(world.scale.x+(lay.s*(1-.2*Math.min(1,ps))-world.scale.x)*.08);
+spin+=.0016;mxs+=(mx-mxs)*.05;mys+=(my-mys)*.05;
+globe.rotation.y=-88*D2R+spin+mxs*.5;
+globe.rotation.x=.38+mys*.3;
+/* arcs: grow from Kolkata, then fade */
+for(var k=0;k<arcs.length;k++){var a=arcs[k];a.t+=a.sp;
+if(a.t>1.7)a.t=-Math.random()*.4;
+var p=Math.max(0,Math.min(1,a.t)),n=Math.floor(p*64);
+a.ln.geometry.setDrawRange(0,n>1?n+1:0);
+a.ln.material.opacity=a.t<1?.9:Math.max(0,.9-(a.t-1)*1.3);
+var hv=a.pts[Math.min(64,Math.floor(p*64))];hp[k*3]=hv.x;hp[k*3+1]=hv.y;hp[k*3+2]=hv.z}
+hg.attributes.position.needsUpdate=true;
+heads.material.opacity=1;
+/* hub pulse */
+rings.forEach(function(q){var ph=((now*.0007)+q.off)%1;q.m.scale.setScalar(1+ph*5);q.m.material.opacity=(1-ph)*.8});
+r.render(s,cam);raf=requestAnimationFrame(frame)}
+function kick(){if(!raf&&!document.hidden){last=performance.now();raf=requestAnimationFrame(frame)}}
+document.addEventListener('visibilitychange',kick);
+addEventListener('scroll',kick,{passive:true});
+kick();
+
+
+})();
+</script>
+</body>
+</html>
